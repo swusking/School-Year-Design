@@ -3,7 +3,7 @@
 
 
 ## 2017.3.16
-  1. 创建了一个学年设计的仓库，并git clone到了本地
+  1. 创建了一个学年设计的Github Repository，并git clone到了本地
   2. 下载了Atom编辑器，并简单的查看了Markdown的语法
   3. 创建了OneNote笔记库，用于资料的备份
   4. 搜集了关于Wi-Fi加密方式的文档：WEP/WPA/WPA2
