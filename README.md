@@ -6,9 +6,8 @@
   2. sking_modify：我自己的分支，每天只要学习了就会更新一次
 
 ### 文件说明（笔记里的链接可能无法使用，因为我只导出了关键笔记）
-  1. document：搜集的文档资料
-  2. Wi-Fi Notes.one：我的OneNote笔记
-  3. Wireshark.one：Wireshark笔记
+  1. Document：网上搜集的关于课程的文档资料
+  2. OneNote：我的OneNote笔记
 
 -----------------------------
 
@@ -37,3 +36,15 @@
 > >   2.4 ICMP报文、ping包、tracert包  
 > >   2.5 DHCP报文(release/discover/offer/request/ack)  
 > >   2.6 DNS报文、查询报文、递归查询报文、区域传送报文  
+>
+> -----------------------  
+> > ### 2017.3.28-2017.4.1
+> > 1. 继续对各种协议进行抓包分析  
+> >   1.1 HTTP报文、HTTP的工作流程、HTTP Request/Response、HTTP的请求方法和相关状态码、HTTP的数据压缩格式  
+> >   1.2 HTTPS报文、SSL的加密方式、SSL的传输过程、TLS Handshaking Protocols、TLS Record Layer Protocol  
+> >   1.3 FTP报文、传输模式、Windows cmd下的FTP命令、明文传输解密  
+> >   1.4 NFS报文、NFS的mount操作、NFS的Read/Write过程分析  
+> >   1.5 E-mail报文、SMTP、POP/POP3、IMAP、数据包的解密  
+> >   1.6 802.11报文  
+> > 2. 对某些常见的上网错误信息，学会了使用wireshark进行简单排错搭建技能  
+> > 3. 了解了一些漏洞原理：SYN扫描、嗅探器使用、ARP欺骗、网络钓鱼攻击案例  
