@@ -102,3 +102,8 @@
 > > 1. 网上查找了有关于WPA加密的资料，收入Document中  
 > > 2. 对WPA的TPIK和CCPM加密有了初步了解，得知只能进行暴力破解  
 > > 3. 对WPA的四次握手进行了分析。明天抓取握手包进行暴力破解程序的编写  
+>
+> > ### 2017.6.15
+> > 1. 查找了相关文章，使用wireshark对WPA四次握手包进行抓取，已放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
+> > 2. 用Python完成了对WPA/WPA2的PBKDF2、PRF-512、MIC认证加密算法进行了编写，已放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
+> > 3. 入坑过程已放在[博客](http://www.skingyang.cn/wordpress/442.html)，欢迎阅览
