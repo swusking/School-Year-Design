@@ -107,3 +107,8 @@
 > > 1. 查找了相关文章，使用wireshark对WPA四次握手包进行抓取，已放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
 > > 2. 用Python完成了对WPA/WPA2的PBKDF2、PRF-512、MIC认证加密算法进行了编写，已放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
 > > 3. 入坑过程已放在[博客](http://www.skingyang.cn/wordpress/442.html)，欢迎阅览
+>
+> > ### 2017.6.16
+> > 1. 搞了一天把WPA握手包过程用Python代码写出来了，并用wireshark抓包进行了对比分析，实验结果还是令人满意
+> > 2. 照旧放《[Python：对WPA四次握手过程进行解析](http://www.skingyang.cn/wordpress/495.html)》
+> > 3. 代码也放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
