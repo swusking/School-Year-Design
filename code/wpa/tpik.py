@@ -2,7 +2,7 @@
 #coding:utf-8
 
 import pbkdf2, prf512
-import hmac, hashlib
+import hmac
 
 def get_mic(Passphrase, SSID, AP_MAC, STA_MAC, ANonce, SNonce, DATA):
     A = "Pairwise key expansion\0"
@@ -14,7 +14,7 @@ def get_mic(Passphrase, SSID, AP_MAC, STA_MAC, ANonce, SNonce, DATA):
     
     mic_key = ptk[0:16]
     # 注意参数，都是字符串，不是十六进制
-    mic = hmac.new(mic_key, DATA.decode('hex'), hashlib.sha1).hexdigest()[0:32]   #只取前32位
+    mic = hmac.new(mic_key, DATA.decode('hex')).hexdigest()
     return mic
 
 def main():
@@ -28,12 +28,9 @@ def main():
     #从wireshark取数据时，要把MIC置0，16个字节
     data = '02030077fe01c9002000000000000000023320ced2535ed697d52c272aeea799d4d188a4603142f37a240f8064d7cdf58f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018dd160050f20101000050f20201000050f20201000050f202'
 
-    # 637056462428636a75835b7778e0740df9f13c46
+    # ce52ff9185830f6bf2f50e1d59d564b4
     print get_mic(Passphrase, SSID, APmac, Clientmac, ANonce, SNonce, data)
 
 if __name__ == '__main__':
     main()
 
-
-    
-    
