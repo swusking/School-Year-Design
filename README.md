@@ -107,3 +107,36 @@
 > > 1. 查找了相关文章，使用wireshark对WPA四次握手包进行抓取，已放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
 > > 2. 用Python完成了对WPA/WPA2的PBKDF2、PRF-512、MIC认证加密算法进行了编写，已放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
 > > 3. 入坑过程已放在[博客](http://www.skingyang.cn/wordpress/442.html)，欢迎阅览
+>
+> > ### 2017.6.16
+> > 1. 搞了一天把WPA握手包过程用Python代码写出来了，并用wireshark抓包进行了对比分析，实验结果还是令人满意
+> > 2. 照旧放《[Python：对WPA四次握手过程进行解析](http://www.skingyang.cn/wordpress/495.html)》
+> > 3. 代码也放入[github](https://github.com/swusking/School-Year-Design/tree/sking_modify/code/wpa)
+>
+> > ### 2017.6.17-2017.6.18
+> > 1. 查询了WPS的协议内容WSC，发现重点书籍《Wi-Fi-Simple-Configuration-Technical-Specification-v2-0-2》
+> > 2. 对书籍内容进行选择性查看，并记录到了笔记上
+> > 3. 了解了AP和站点之间的交互过程：WSC IE、M1-M8、Beacon、Probe Request/Response、Auth Request/Response
+>
+> ## 第17周（2017.6.19-2017.6.25）
+> > ### 2017.6.19-2017.6.21
+> > 1. 发现不能简单的抓包实现破解，要真正的模拟一个终端，发包和抓包相结合才能实现真正的结果
+> > 2. 搜集了相关信息，了解了WSC数据包结构
+> > 3. 用reaver工具对WPS进行了破解，查看黑客工具在实现过程中的数据包构造
+>
+> > ### 2017.6.22-2017.6.23
+> > 1. 自己编写了破解WPS程序，数据包交互一直很顺利，直到交互过程中的M2数据包，AP直接把我踢掉
+> > 2. 总结应该是在DH过程中，自己放产生的密钥和AP产生的密钥不同而导致连接失败
+> > 3. 由于无法验证我的密钥算法的正确性，所以实验搁浅，无法继续
+>
+> > ### 2017.6.24
+> > 1. 对网络中连接swu-wifi的数据包进行嗅探，从中获取了登录账号密码
+> > 2. 原理：由于swu是开放网络，加上学习的web服务器使用的HTTP协议是明文传输，所以简单的抓包破解即可
+>
+> > ### 2017.6.25
+> > 1. 用bind9在Kali Linux上搭建了DNS服务器，放在内网中，并用路由器的默认DNS服务器指向我的DNS服务器
+> > 2. 用httcrack对swu学习官网进行了拷贝，放到我的内网web服务器中，并手工写入DNS服务器
+> > 3. 用终端进行测试，发现连入我wifi的终端，进入swu.edu.cn页面会进入我的web服务器，从而实现隐私窃取
+> 
+> ## 第18周（2017.6.26-2017.7.2）
+> > 实验总体已经完成，这周完成报告的编写
